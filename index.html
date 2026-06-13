@@ -12,26 +12,37 @@
 
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
-  <a href="#home" class="logo"><img src="./images/shreeji_infotech_logo_v8.png" alt="Shreeji Infotech Logo"></a>
+  <a href="#home" class="logo">
+    <span class="mark">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <path class="s-path" d="M27 12 C20 12 14 15 14 20 C14 25 20 27 26 29 C33 31 27 34 20 34"/>
+      </svg>
+    </span>
+    <span class="logo-text">Shreeji Infotech<span class="logo-tag">Software &middot; AI &middot; Cloud</span></span>
+  </a>
   <div class="nav-links" id="navLinks">
     <a href="#home" class="nav-link">Home</a>
     <a href="#services" class="nav-link">Services</a>
     <a href="#portfolio" class="nav-link">Concepts</a>
     <a href="#testimonials" class="nav-link">About</a>
     <a href="#faq" class="nav-link">FAQ</a>
-    <a href="#contact" class="nav-cta">Get a Quote</a>
   </div>
-  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <div class="nav-right">
+    <a href="#contact" class="nav-cta">Get a Quote</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="home">
   <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=60">
-    <source src="https://cdn.coverr.co/videos/coverr-artificial-intelligence-3d-animation-5708/1080p.mp4" type="video/mp4">
+    <source src="./video/istockphoto-2152696298-640_adpp_is.mp4" type="video/mp4">
   </video>
+  <div class="hero-particles" id="heroParticles"></div>
   <div class="container hero-inner">
     <div class="hero-content">
       <div class="hero-eyebrow"><span class="dot"></span>Now Open &middot; Booking Early Clients</div>
+      <div class="ai-badge"><span class="ai-badge-icon">&#10038;</span>AI-Powered Digital Solutions</div>
       <h1>Your trusted partner for <span class="grad-text">software, digital growth &amp; IT solutions.</span></h1>
       <p>Shreeji Infotech &amp; Consultancy Pvt. Ltd. is a newly launched studio helping businesses build, automate, and scale through <span class="typer" id="heroTyper"></span></p>
       <div class="hero-actions">
@@ -184,7 +195,7 @@
           <img src="./images/profile.jpeg" alt="Founder portrait">
         </div>
         <div class="founder-info">
-          <h3>Urvi Darji</h3>
+          <h3>Founder Name</h3>
           <span class="founder-role">Founder &amp; CEO, Shreeji Infotech &amp; Consultancy</span>
           <p class="founder-bio">With a background in software engineering and a passion for helping businesses adopt technology the right way, our founder started Shreeji Infotech to bring honest, high-quality IT services to companies that deserve more than a one-size-fits-all agency.</p>
           <div class="founder-socials">
@@ -312,7 +323,14 @@
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <a href="#home" class="logo"><span class="mark">SI</span>Shreeji Infotech</a>
+      <a href="#home" class="logo">
+    <span class="mark">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <path class="s-path" d="M27 12 C20 12 14 15 14 20 C14 25 20 27 26 29 C33 31 27 34 20 34"/>
+      </svg>
+    </span>
+    <span class="logo-text">Shreeji Infotech<span class="logo-tag">Software &middot; AI &middot; Cloud</span></span>
+  </a>
       <div class="footer-links">
         <a href="#services">Services</a>
         <a href="#portfolio">Concepts</a>
@@ -326,9 +344,10 @@
 </footer>
 
 <!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/919916455410" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.04 4a8.94 8.94 0 0 0-7.74 13.41L3 21l3.7-1.27a8.93 8.93 0 0 0 5.34 1.71h.01c4.94 0 8.95-4.01 8.95-8.95a8.91 8.91 0 0 0-2.4-6.17ZM12.05 19.7a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.96.94-2.74-.18-.28a7.4 7.4 0 0 1-1.14-3.95 7.42 7.42 0 1 1 7.42 7.42 7.4 7.4 0 0 1-.2-.22Zm4.07-5.56c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05-.22-.11-.93-.34-1.77-1.09-.65-.58-1.09-1.3-1.22-1.52-.13-.22-.01-.34.11-.45.11-.11.25-.28.37-.42.12-.14.16-.24.24-.4.08-.15.04-.28-.02-.39-.07-.11-.59-1.42-.81-1.94-.21-.51-.43-.44-.6-.45-.15-.01-.33-.01-.5-.01-.18 0-.46.07-.7.31-.24.24-.92.9-.92 2.2 0 1.3.95 2.55 1.08 2.73.13.18 1.83 2.79 4.43 3.81 2.6 1.02 2.6.68 3.07.64.47-.04 1.31-.53 1.49-1.05.18-.51.18-.94.13-1.05-.06-.1-.22-.16-.44-.27Z"/></svg>
 </a>
+
 
 <script src="js/script.js"></script>
 </body>

@@ -4,6 +4,36 @@ window.addEventListener('scroll', ()=>{
   navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
 
+// Scroll to top button
+const scrollTopBtn = document.getElementById('scrollTop');
+if(scrollTopBtn){
+  window.addEventListener('scroll', ()=>{
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  });
+  scrollTopBtn.addEventListener('click', ()=>{
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+}
+
+// Hero floating particles (continuous AI-style effect)
+const particleContainer = document.getElementById('heroParticles');
+if(particleContainer){
+  const count = 24;
+  for(let i=0;i<count;i++){
+    const p = document.createElement('div');
+    p.className = 'hero-particle';
+    const size = Math.random()*5 + 2;
+    p.style.width = size + 'px';
+    p.style.height = size + 'px';
+    p.style.left = Math.random()*100 + '%';
+    p.style.bottom = '-20px';
+    p.style.setProperty('--drift', (Math.random()*60 - 30) + 'px');
+    p.style.animationDuration = (Math.random()*12 + 10) + 's';
+    p.style.animationDelay = (Math.random()*12) + 's';
+    particleContainer.appendChild(p);
+  }
+}
+
 // Hero rotating typewriter effect
 const typerEl = document.getElementById('heroTyper');
 if(typerEl){
